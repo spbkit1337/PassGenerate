@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassGenerate</title>
+
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="text-center">Генератор паролей</h1>
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form>
+
+                    <div class="mb-3">
+                      <label for="param-1" class="form-label">Длина пароля <span id="password-length" class="badge">20</span></label>
+                      <input type="range" class="" id="param-1" value = "20" max="50">
+                    </div>
+
+                    <div class="checkbox">
+                        <label for="">
+                            <input type="checkbox" class="checkbox" id="param-2" checked>Цифры (0-9)
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label for="">
+                            <input type="checkbox" class="checkbox" id="param-3" checked>Строчные буквы (a,b,c)
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label for="">
+                            <input type="checkbox" class="checkbox" id="param-4">Прописные буквы (A,B,C)
+                        </label>
+                    </div>
+
+                    <div class="checkbox">
+                        <label for="">
+                            <input type="checkbox" class="checkbox" id="param-5">Спецсимволы (!,#,$,@ ,&,?,%)
+                        </label>
+                    </div>
+
+                    <button type="button" class="btn btn-success" id="generator">Генерировать</button>
+                    <img src="image/duck.gif" class = "duck-img">
+                    
+                  </form>
+            </div>
+        </div>
+        <!-- Вывод сгенерированых паролей -->
+        <div class="row">
+            <div class="col-lg-12">
+                <b><div class="passlist">Список паролей:</div></b>
+                <div id="out">
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+ 
+    <footer>
+        <a href = "https://github.com/spbkit1337"> <img src="image/github.png" alt="" class="github-img"> </a>
+    </footer>
+
+       
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/generator.js"></script>
+</body>
+</html>

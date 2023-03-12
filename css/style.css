@@ -1,0 +1,21 @@
+body {
+    background-color: #f6e8cd;
+}
+#out {
+    margin-top: 20px;
+}
+
+.passlist {
+    margin-top: 20px;
+}
+
+.duck-img {
+    align-items: center;
+    width: 100px;
+}
+
+.github-img {
+    width: 100px;
+    margin-left: 50%;
+
+}
